@@ -1,0 +1,81 @@
+.proj_grid{
+    display: grid;
+    grid-template-columns: 11.25vw 37.25vw 37.25vw 11.25vw;
+    grid-template-rows: 300px 300px 300px 300px;
+    row-gap: 0.5vw;
+    column-gap: 0.5vw;
+    justify-items: center;
+}
+.proj_content{
+    color: mintcream;
+    text-shadow: rgb(40, 40, 40) 1px 1px 2px;
+    background-color:rgb(20, 20, 20);
+    text-align: center;
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+    margin: 0px;
+}
+.proj_content:hover{
+    background-color: wheat;
+    color: black;
+}
+.spacer1{
+    overflow: hidden;
+    margin: 0px;
+    background-color: seashell;
+    position: relative;
+}
+.spacer2{
+    overflow: hidden;
+    margin: 0px;
+    background-color: lightseagreen;
+    position: relative;
+}
+#model_image{
+    max-height: 100%;
+}
+#oddball_vid{
+    height: 100%;
+    width: 100%;
+}
+#music_image{
+    height: 150px;
+    display: block;
+    float: none;
+    margin: 5px 5px;
+}
+#music_audio{
+    display: block;
+    float: none;
+    margin: 5px 5px;
+}
+#music_button{
+    background-color: darkslateblue;
+    color: azure;
+    text-shadow: black 1px 1px;
+    border-color: azure;
+    border-width: 5px;
+    border-radius: 5px;
+    height: 50px;
+    margin: 5px 5px;
+}
+#music_button:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+#hw_page{
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 600px){
+    .proj_grid{
+        grid-template-columns: 0 50vw 50vw 0;
+        float: left;
+        position: relative;
+    }
+}
